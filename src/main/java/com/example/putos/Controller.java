@@ -17,6 +17,7 @@ import java.util.Collections;
 
 
 public class Controller {
+    int a=1;
     public Button bJugar;
     public Button bAjustes;
     public Text tPregunta;
