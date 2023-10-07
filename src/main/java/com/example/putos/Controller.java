@@ -43,6 +43,7 @@ public class Controller {
     public int su=1;
     public Quest si=new Quest(su);
     public AjustesController paneo;
+    public Button btLlamada;
 
     public void Comenzar(ActionEvent actionEvent) {
         rA.setDisable(false);
@@ -167,5 +168,8 @@ public class Controller {
             p8.setStyle("-fx-fill: red");
             pt8.setStyle("-fx-fill: white");
         }
+    }
+
+    public void ComodinLlamada(ActionEvent actionEvent) {
     }
 }
