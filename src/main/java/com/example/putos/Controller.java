@@ -44,6 +44,7 @@ public class Controller {
     public Quest si=new Quest(su);
     public AjustesController paneo;
     public Button btLlamada;
+    public Button btComodinMitad;
 
     public void Comenzar(ActionEvent actionEvent) {
         rA.setDisable(false);
@@ -170,6 +171,17 @@ public class Controller {
         }
     }
 
-    public void ComodinLlamada(ActionEvent actionEvent) {
+    public void ComodinLlamada(ActionEvent actionEvent) throws IOException {
+        FXMLLoader iniLlamada = new FXMLLoader(HelloApplication.class.getResource("ComodinLlamada.fxml"));
+        Parent root=iniLlamada.load();
+        ComodinLlamadaController pene=iniLlamada.getController();
+        Stage stage=new Stage();
+        Scene scene=new Scene(root);
+        stage.setScene(scene);
+        stage.setTitle("Comodin de la llamada");
+        stage.show();
+    }
+
+    public void ComodinMitad(ActionEvent actionEvent) {
     }
 }
