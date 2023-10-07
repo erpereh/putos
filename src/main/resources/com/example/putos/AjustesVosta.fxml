@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="279.0" prefWidth="600.0" style="-fx-background-color: lightblue;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.putos.AjustesController">
+   <children>
+      <Text fill="WHITE" layoutX="197.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TEMATICA" textAlignment="CENTER" wrappingWidth="206.13671875">
+         <font>
+            <Font name="System Bold" size="33.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="5.0" layoutX="100.0" layoutY="104.0" stroke="WHITE" strokeLineJoin="ROUND" strokeType="OUTSIDE" width="400.0" />
+      <RadioButton fx:id="r2" layoutX="358.0" layoutY="147.0" mnemonicParsing="false" text="PANEO" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="loqueveas" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="r1" layoutX="134.0" layoutY="147.0" mnemonicParsing="false" selected="true" text="GENERALES" textFill="WHITE" toggleGroup="$loqueveas">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </RadioButton>
+      <Button fx:id="cerrar" layoutX="232.0" layoutY="206.0" mnemonicParsing="false" onAction="#Confirmar" prefHeight="35.0" prefWidth="136.0" style="-fx-background-color: #7f40bd;" text="Confirmar" textFill="WHITE">
+         <font>
+            <Font name="Wingdings" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
